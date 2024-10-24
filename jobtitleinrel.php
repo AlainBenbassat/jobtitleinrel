@@ -30,24 +30,6 @@ function jobtitleinrel_civicrm_install(): void {
 }
 
 /**
- * Implements hook_civicrm_postInstall().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_postInstall
- */
-function jobtitleinrel_civicrm_postInstall(): void {
-  _jobtitleinrel_civix_civicrm_postInstall();
-}
-
-/**
- * Implements hook_civicrm_uninstall().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_uninstall
- */
-function jobtitleinrel_civicrm_uninstall(): void {
-  _jobtitleinrel_civix_civicrm_uninstall();
-}
-
-/**
  * Implements hook_civicrm_enable().
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_enable
@@ -56,35 +38,6 @@ function jobtitleinrel_civicrm_enable(): void {
   CRM_Jobtitleinrel_Helper::addAll();
 
   _jobtitleinrel_civix_civicrm_enable();
-}
-
-/**
- * Implements hook_civicrm_disable().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_disable
- */
-function jobtitleinrel_civicrm_disable(): void {
-  _jobtitleinrel_civix_civicrm_disable();
-}
-
-/**
- * Implements hook_civicrm_upgrade().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_upgrade
- */
-function jobtitleinrel_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
-  return _jobtitleinrel_civix_civicrm_upgrade($op, $queue);
-}
-
-/**
- * Implements hook_civicrm_entityTypes().
- *
- * Declare entity types provided by this module.
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_entityTypes
- */
-function jobtitleinrel_civicrm_entityTypes(&$entityTypes): void {
-  _jobtitleinrel_civix_civicrm_entityTypes($entityTypes);
 }
 
 // --- Functions below this ship commented out. Uncomment as required. ---
